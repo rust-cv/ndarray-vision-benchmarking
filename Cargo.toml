@@ -1,0 +1,23 @@
+[package]
+name = "ndarray-vision-benchmarking"
+version = "0.1.0"
+authors = ["xd009642 <danielmckenna93@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ndarray-vision = { git = "https://github.com/xd009642/ndarray-vision", branch = "develop" }
+image = "0.23.4"
+imageproc = "0.20.0"
+criterion = "0.3.2"
+png = "0.16"
+
+[profile.bench]
+opt-level = 3
+debug = false
+overflow-checks = false
+
+[[bench]]
+name = "canny"
+harness = false
