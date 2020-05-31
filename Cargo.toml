@@ -7,7 +7,8 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ndarray-vision = { git = "https://github.com/xd009642/ndarray-vision", branch = "develop" }
+ndarray-vision = { git = "https://github.com/xd009642/ndarray-vision", branch = "speedup" }
+ndarray = { version = "0.13", default-features = false }
 image = "0.23.4"
 imageproc = "0.20.0"
 criterion = "0.3.2"
@@ -20,4 +21,8 @@ overflow-checks = false
 
 [[bench]]
 name = "canny"
+harness = false
+
+[[bench]]
+name = "conv2d"
 harness = false

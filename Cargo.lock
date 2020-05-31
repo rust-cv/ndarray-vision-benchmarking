@@ -568,7 +568,6 @@ dependencies = [
 [[package]]
 name = "ndarray-vision"
 version = "0.1.1"
-source = "git+https://github.com/xd009642/ndarray-vision?branch=develop#02c341d79fd34c9d50032e1d77fc7112e21cbe8e"
 dependencies = [
  "ndarray",
  "ndarray-linalg",
@@ -584,6 +583,7 @@ dependencies = [
  "criterion",
  "image",
  "imageproc",
+ "ndarray",
  "ndarray-vision",
  "png",
 ]
