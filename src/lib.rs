@@ -1,7 +1,6 @@
 use ndarray_vision::core::{Gray, Image};
 use std::fs::File;
 
-
 pub fn load_lena() -> Image<u8, Gray> {
     let dec = png::Decoder::new(File::open("data/lena.png").unwrap());
     let (info, mut reader) = dec.read_info().unwrap();

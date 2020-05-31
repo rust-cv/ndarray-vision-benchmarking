@@ -1,8 +1,8 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use image::open;
 use ndarray_vision::core::{Gray, Image};
-use ndarray_vision_benchmarking::load_lena;
 use ndarray_vision::processing::*;
+use ndarray_vision_benchmarking::load_lena;
 
 pub fn ndarray_vision_bench(c: &mut Criterion) {
     // gaussian sigma in imageproc is default 1.4 in a 7x7 kernel

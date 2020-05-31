@@ -568,6 +568,7 @@ dependencies = [
 [[package]]
 name = "ndarray-vision"
 version = "0.1.1"
+source = "git+https://github.com/xd009642/ndarray-vision?branch=speedup#0e4f919e4932ed4d499c1c8b13081264e72de2a1"
 dependencies = [
  "ndarray",
  "ndarray-linalg",

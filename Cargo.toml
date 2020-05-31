@@ -19,6 +19,13 @@ opt-level = 3
 debug = false
 overflow-checks = false
 
+[profile.release]
+debug = true
+
+[[bench]]
+name = "sobel"
+harness = false
+
 [[bench]]
 name = "canny"
 harness = false
