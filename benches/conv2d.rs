@@ -20,7 +20,7 @@ pub fn ndarray_vision_bench(c: &mut Criterion) {
 pub fn imageproc_bench(c: &mut Criterion) {
     let image = open("data/lena.png").unwrap().to_luma();
     let weights: Vec<u8> = vec![1, 0, 1, 0, 1, 0, 1, 0, 1];
-    c.bench_function("conv2d+3x3_imageproc", |b| {
+    c.bench_function("conv2d_3x3_imageproc", |b| {
         b.iter(|| imageproc::filter::filter3x3::<_, u8, u8>(black_box(&image), black_box(&weights)))
     });
 }
